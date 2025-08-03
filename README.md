@@ -54,4 +54,4 @@ SNS topic
 IAM roles and policies
 
 Author: Zaeem Attique Ashar
-Feel free to connect on LinkedIn 💼
+Feel free to connect on [LinkedIn 💼](www.linkedin.com/in/zaeemattiqueashar).
