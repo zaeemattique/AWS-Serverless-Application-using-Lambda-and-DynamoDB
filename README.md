@@ -1,10 +1,10 @@
 # AWS-Serverless-Application-using-Lambda-and-DynamoDB
 
-#Serverless Inventory Monitoring System on AWS
+# Serverless Inventory Monitoring System on AWS
 
 This project implements a serverless architecture for managing and monitoring product inventory using AWS services. It automates CSV uploads to an S3 bucket, stores inventory data in DynamoDB, and sends low-inventory alerts via SNS.
 
-#Architecture Overview
+# Architecture Overview
 
 **Services Used:**
 - **Amazon S3** – Triggers data processing when CSV files are uploaded.
@@ -15,7 +15,7 @@ This project implements a serverless architecture for managing and monitoring pr
 - **Amazon SNS** – Sends notifications for low inventory items.
 - **IAM Roles and Policies** – Ensure secure access between services.
 
-#Workflow
+# Workflow
 
 1. **CSV File Upload:** User uploads a file (e.g., `inventory.csv`) to the S3 bucket.
 2. **Lambda Trigger 1 (`dynamo_db_upload.py`):** 
@@ -27,9 +27,9 @@ This project implements a serverless architecture for managing and monitoring pr
    - Scans for items with stock `≤ 5`.
    - Sends alerts via SNS to subscribed email addresses.
 
-#Sample CSV Format
+# Sample CSV Format
 
-```csv
+csv
 StoreRegion,Product,ProductCount
 North,Apple,10
 South,Orange,3
@@ -40,10 +40,10 @@ Scripts provided in aws-cli-script.txt will help you:
 Create and configure the S3 bucket, DynamoDB table, SNS topic, and IAM roles.
 Deploy and connect Lambda functions with event triggers and permissions.
 
-#Notifications
+# Notifications
 Subscribe an email to the SNS topic. You’ll receive alerts when product stock falls below the threshold.
 
-#Cleanup
+# Cleanup
 Remember to delete:
 Lambda functions
 S3 bucket
