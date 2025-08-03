@@ -1,5 +1,7 @@
 # AWS-Serverless-Application-using-Lambda-and-DynamoDB
 
+<img width="1536" height="1024" alt="Image" src="https://github.com/user-attachments/assets/063e13ed-d16b-4bd9-95da-be358586e3bb" />
+
 # Serverless Inventory Monitoring System on AWS
 
 This project implements a serverless architecture for managing and monitoring product inventory using AWS services. It automates CSV uploads to an S3 bucket, stores inventory data in DynamoDB, and sends low-inventory alerts via SNS.
